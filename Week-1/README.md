@@ -73,24 +73,30 @@ to construct a DOM tree.
 
 for example the following code is translated to
 
-<html>
+
+
+<!-- <html>
   <body>
     <p>
       Hello World
     </p>
     <div> <img src="example.png"/></div>
   </body>
-</html>
+</html> -->
+
+
 
  ![DOM_TREE_DIAGRAM](images/HTML_DOM_TREE.avif)
 
 
 4.2) CSS Parser 
+
+
 Unlike HTML, CSS is a context free grammar and can be parsed using conventional parsers.
+
 
 WEBKIT CSS PARSER
 
-<!--  enter css parsing flow here -->
  ![CSS_PARSER_DIAGRAM](images/CSS_PARSER_FLOW.avif)
 
 
@@ -100,9 +106,10 @@ WebKit uses Flex and Bison parser generators to create parsers automatically fro
 
 5.) Script Processing
 
-he model of the web is synchronous. We expect scripts to be parsed and executed immediately when the parser reaches a <script> tag. The parsing of the document halts until the script has been executed. If the script is external then the resource must first be fetched from the network - this is also done synchronously, and parsing halts until the resource is fetched. We can add the "defer" attribute to a script, in which case it will not halt document parsing and will execute after the document is parsed. HTML5 adds an option to mark the script as asynchronous so it will be parsed and executed by a different thread.
+The model of the web is synchronous. We expect scripts to be parsed and executed immediately when the parser reaches a <script> tag. The parsing of the document halts until the script has been executed. If the script is external then the resource must first be fetched from the network - this is also done synchronously, and parsing halts until the resource is fetched. We can add the "defer" attribute to a script, in which case it will not halt document parsing and will execute after the document is parsed. HTML5 adds an option to mark the script as asynchronous so it will be parsed and executed by a different thread.
 
 5.1) Speculative Parsing
+
 Both WebKit and Firefox do this optimization. While executing scripts, another thread parses the rest of the document and finds out what other resources need to be loaded from the network and loads them. In this way, resources can be loaded on parallel connections and overall speed is improved. Note: the speculative parser only parses references to external resources like external scripts, style sheets and images: it doesn't modify the DOM tree - that is left to the main parser.
 
 
@@ -111,6 +118,7 @@ Both WebKit and Firefox do this optimization. While executing scripts, another t
 While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document. The purpose of this tree is to enable painting the contents in their correct order.
 
 7.) Layout
+
 When the renderer is created and added to the tree, it does not have a position and size. Calculating these values is called layout or reflow.
 
 HTML uses a flow based layout model, meaning that most of the time it is possible to compute the geometry in a single pass. Elements later "in the flow" typically do not affect the geometry of elements that are earlier "in the flow", so layout can proceed left-to-right, top-to-bottom through the document.
@@ -123,6 +131,7 @@ All renderers have a "layout" or "reflow" method, each renderer invokes the layo
 
 
 8.) Painting
+
 In the painting stage, the render tree is traversed and the renderer's "paint()" method is called to display content on the screen. Painting uses the UI infrastructure component.
 
 Like layout, painting can also be global - the entire tree is painted - or incremental. In incremental painting, some of the renderers change in a way that does not affect the entire tree. The changed renderer invalidates its rectangle on the screen. This causes the OS to see it as a "dirty region" and generate a "paint" event.
