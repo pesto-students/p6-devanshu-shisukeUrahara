@@ -1,0 +1,182 @@
+* {
+    font-family: "Lato, Helvetica, sans-serif";
+    min-height: 20vh;    
+    margin:0;
+    padding:0;
+}
+
+.mainSection{
+    display:flex;
+
+}
+
+.sideBar{
+    height:auto;
+    min-width:50px;
+}
+
+.sideBarOptions{
+    background-color: #E6E8E6;
+    color:black;
+    justify-content: center;
+}
+
+.sideBarOptions >li{
+    padding-top:10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.sideBarIcons{
+    color:black;
+    min-height: 0px;
+    margin-bottom: 10px;
+  }
+
+
+
+.contentSection{
+    flex-grow:1;
+}
+
+.songHeader{
+    display: flex;
+    padding:30px;
+}
+
+.songHeaderDetails{
+    padding:20px;
+}
+
+
+
+
+ul{
+    list-style:none;
+}
+
+.songHeader{
+    background-color: #353535;
+}
+
+.footerSection{
+background-color: #386FA4;
+display: flex;
+margin-bottom: auto;
+}
+
+.songHeaderDetails{
+    color:#FEFEFE;
+    margin-left:100px;
+}
+
+
+
+.headerDetailContent h1{
+    padding:0px;
+    min-height: 0px;
+    margin-bottom: 10px;
+}
+.headerDetailContent p{
+    min-height: 0px;
+
+}
+
+.headerPlayOptions{
+    display: flex;
+}
+.headerPlayOptions li{
+    margin-right: 30px;
+}
+
+.footerPlayOptions{
+    display: flex;    
+}
+
+.footerPlayOptions li {
+    margin-right: 30px;
+    flex-grow:1;
+    color:white;
+    margin-top:100px;
+    margin-left:200px;
+
+        /* justify-content: space-between; */
+
+}
+
+/* .headerPlayOptions > li{
+    margin-right: 30px;
+    justify-content: space-around;
+} */
+
+
+
+ tr:nth-child(even) {
+    background-color: #E6E8E6;
+  }
+
+ tr:nth-child(odd) {
+    background-color: white;
+  }
+
+  .songListTable > tr{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  table{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+
+  td > button {
+   background-color: transparent;
+   padding: 2px;
+   min-height:0px;
+   color:blue;
+  }
+
+  .fotterLeft{
+    display: flex;
+  }
+
+  .footerImage{
+    width: 100%;
+    height:auto;
+    object-fit: contain;
+    padding-left:20px;
+    padding-top:20px;
+  }
+
+  .footerLeftContent{
+    margin-top:40px;
+    margin-left:50px;
+  }
+
+ .footerLeftContent > p{
+    min-height: 0px;
+    min-width: 100px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+
+
+   /* .footerRight{
+    display: flex;
+  }  */
+  
+  /* .footerPlayOptions >li{
+    color:white;
+    margin-top:auto;
+    margin-left:auto;
+    justify-content: space-around;
+  } */
+
+  
