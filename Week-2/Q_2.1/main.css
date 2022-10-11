@@ -1,79 +1,50 @@
-.base{    
-    position:relative;
-    top:-100px;
-    left:100px;
-    width:200px;
-    height:200px;
-    display: flex;
-    flex-wrap: wrap;
-    margin:auto;
+.header{
+    display:flex;
+    justify-content: center;
+    background-color: lightpink;
 }
 
 .content{
-    position: relative;
-    left:50%;
-    top:100px;
-    width:200px;
-    height:200px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
-.content h1{
-    position:relative;
-    top:75px;
+.inputForm{
+    display: flex;
+    flex-direction: column;
 }
 
-
-h1{
-    text-align: center;
+.inputForm div{
+    width: 500px;
 }
 
-.box{
-    width:100px;
-    height:100px;
-    transition: transform 5s ease-in;
-    z-index:1;
+.submitButton{
+    display: flex;
+    flex-direction: row;
 }
 
-.red{
-    background-color: red;
+.submitButton button{
+    margin:0px 25%;
 }
 
-.yellow{
-    background-color: yellow;
-}
+label {
+    display: inline-block;
+    width: 100px;
+  }
 
-.blue{
-    background-color: blue;
-}
-
-.green{
-    background-color: green;
-}
-
-.red:hover{
-    transform: rotate(90deg);
-    transition-duration: 5s;
-    transform-origin: top left;
-}
+  footer{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
 
-.yellow:hover{
-    transform: rotate(-90deg);
-    transition-duration: 5s;
-    transform-origin: top right;
-}
+  footer div ul{
+    list-style: none;
+  }
 
-.blue:hover{
-    transform: rotate(-90deg) ;
-    transition-duration: 5s;
-    transform-origin: bottom left;
-}
 
-.green:hover{
-    transform: rotate(90deg);
-    transition-duration: 5s;
-    transform-origin: bottom right;
-}
 
 
