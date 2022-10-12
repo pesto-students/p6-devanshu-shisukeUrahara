@@ -31,49 +31,44 @@ h1{
 .box{
     width:100px;
     height:100px;
-    transition: transform 5s ease-in;
+    transition: transform 1s ease-in;
     z-index:1;
 }
 
 .red{
     background-color: red;
+    transform-origin: top left;
 }
 
 .yellow{
     background-color: yellow;
+    transform-origin: top right;
 }
 
 .blue{
     background-color: blue;
+    transform-origin: bottom left;
 }
 
 .green{
     background-color: green;
-}
-
-.red:hover{
-    transform: rotate(90deg);
-    transition-duration: 5s;
-    transform-origin: top left;
-}
-
-
-.yellow:hover{
-    transform: rotate(-90deg);
-    transition-duration: 5s;
-    transform-origin: top right;
-}
-
-.blue:hover{
-    transform: rotate(-90deg) ;
-    transition-duration: 5s;
-    transform-origin: bottom left;
-}
-
-.green:hover{
-    transform: rotate(90deg);
-    transition-duration: 5s;
     transform-origin: bottom right;
+}
+
+.base:hover .red{
+    transform: rotate(90deg);
+}
+
+
+.base:hover .yellow{
+    transform: rotate(-90deg);
+}
+
+.base:hover .blue{
+    transform: rotate(-90deg) ;
+}
+.base:hover .green{
+    transform: rotate(90deg);
 }
 
 
