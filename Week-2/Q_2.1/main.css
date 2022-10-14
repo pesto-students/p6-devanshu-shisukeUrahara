@@ -1,9 +1,14 @@
+.root{
+    display: flex;
+    flex-direction: column;
+}
 .header{
     display:flex;
     justify-content: center;
     background-color: lightpink;
     border-radius: 10px;
 }
+
 
 a{
     color:inherit;
@@ -19,6 +24,14 @@ a{
 .leftContent{
     margin-right: 10px;
     margin-left:10px;
+}
+
+.leftContent img{
+    max-width: 100%;
+}
+
+div{
+    max-width:none;
 }
 
 .rightContent{
@@ -67,9 +80,10 @@ label {
   }
 
   footer{
+    width:100%;
     background-color: grey;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     border-radius: 10px;
@@ -103,7 +117,6 @@ label {
     }
 
     footer{
-        flex-direction: row;
         flex-wrap: nowrap;
     }
 
