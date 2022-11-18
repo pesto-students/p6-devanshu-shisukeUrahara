@@ -1,3 +1,4 @@
+// Time complexity Object(N) | Space complexity O(1)
 const maxContiguousDSubArray= (arr)=>{
     let maxSum=-Infinity;
     let currentSum=0;

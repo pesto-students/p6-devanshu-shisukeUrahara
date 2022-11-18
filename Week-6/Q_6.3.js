@@ -1,3 +1,4 @@
+// Time complexity Object(N) | Space complexity O(1)
 const sortZeroesOnesAndTwos= (arr)=>{
     const map= new Map();
 

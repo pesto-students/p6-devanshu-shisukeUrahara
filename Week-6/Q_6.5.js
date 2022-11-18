@@ -1,3 +1,4 @@
+// Time complexity O(N) | Space complexity O(1)
 const doesPairWithGivenDifferenceExists=(arr,diff)=>{
     const map = new Map();
 

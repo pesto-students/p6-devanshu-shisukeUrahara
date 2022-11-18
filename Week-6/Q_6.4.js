@@ -1,3 +1,4 @@
+// Time complexity O(N) | Space complexity O(1)
 const maxProfit = function(prices) {
 
     let current =prices[prices.length-1];

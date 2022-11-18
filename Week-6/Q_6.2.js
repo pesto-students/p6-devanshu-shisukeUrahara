@@ -1,3 +1,5 @@
+// Time complexity Object(N) | Space complexity O(1)
+//  Where N is total number of elements in the matrix
 const spiralMatrixTraversal=(arr)=>{
 
    const result=[];
