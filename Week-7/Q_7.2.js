@@ -1,5 +1,5 @@
 const {Node,LinkedList} = require('./LinkedList');
-
+// Time complexity O(N) | SPACE COMPLEXITY O(1)
 const rotateLinkedList=(list,n,k)=>{
 
     if(k>n){

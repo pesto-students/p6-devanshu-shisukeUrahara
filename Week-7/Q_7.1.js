@@ -1,5 +1,5 @@
 const {Node,LinkedList} = require('./LinkedList');
-
+// Time complexity O(N) | SPACE COMPLEXITY O(1)
 const reverseLinkedList=(list)=>{
 
    let previousNode=null;
