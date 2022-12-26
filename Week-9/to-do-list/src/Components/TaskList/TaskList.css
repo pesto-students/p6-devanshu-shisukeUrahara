@@ -1,0 +1,11 @@
+.taskList > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 16px;
+    margin-bottom: 20px;
+    margin-inline: auto;
+}
+
+.taskList > h1{
+    margin-left: auto;
+}
